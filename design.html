@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>念奴娇·赤壁怀古</title>
+	<style type="text/css">
+		canvas{
+			border: 5px solid #f3b59b;
+			margin: 0 auto;
+			display: block;
+		}
+		body{
+			background-image: url('img/mainBackground.png');
+		}
+        #video{
+        	display: none;
+        	position: absolute;left: 350px;top: 100px;
+        	width: 800px;
+        	height: 600px;
+        }
+        #leadVideo{
+        	display: none;
+        	position: absolute;left: 350px;top: 100px;
+        	width: 800px;
+        	height: 600px;
+        }
+        #audio1{
+            display: none;
+        }
+        #audio2{
+        	display: none;
+        }
+        #audio3{
+        	display: none;
+        }
+        #ans1{
+           position: absolute;
+           left:450px; 
+           top:240px;
+           width: 400px;
+           height: 20px;
+        } 
+        #ans2{
+           position: absolute;
+           left:450px; 
+           top:340px;
+           width: 400px;
+           height: 20px;
+        }
+        #ans3{
+           position: absolute;
+           left:450px; 
+           top:440px;
+           width: 400px;
+           height: 20px;
+        }
+	</style>
+</head>
+<body>
+	<video id="leadVideo" src="念奴娇引入动画.mp4" controls="controls" onended="onVideoEnded1()"></video>
+	<video id="video" src="dance.mp4" controls="controls" onended="onVideoEnded2()"></video>
+	<audio id="audio4" src="audio/念奴娇·赤壁怀古朗诵.mp3"></audio>
+	<audio id="audio1" src="audio/念奴娇·赤壁怀古-胡彦斌.mp3" controls="controls"></audio>
+	<audio id="audio2" src="audio/知否知否.mp3" controls="controls"></audio>
+	<audio id="audio3" src="audio/王菲但愿人长久.mp3" controls="controls"></audio>
+	<input type="text" id="ans1" style="display: none">
+	<input type="text" id="ans2" style="display: none">
+	<input type="text" id="ans3" style="display: none">
+   <canvas id="canvas" width="1080" height="700">
+   	
+   </canvas>
+   <script type="text/javascript" src="js/firstPage.js"></script>
+   <script type="text/javascript" src="js/catalogue.js"></script>
+   <script type="text/javascript" src="js/textAppreciate.js"></script>
+   <script type="text/javascript" src="js/textTranslate.js"></script>
+   <script type="text/javascript" src="js/emotion.js"></script>
+   <script type="text/javascript" src="js/knowledgeExpand.js"></script>
+   <script type="text/javascript" src="js/twoFaction.js"></script>
+   <script type="text/javascript" src="js/interact.js"></script>
+   <script type="text/javascript" src="js/classTest.js"></script>
+   <script type="text/javascript" src="js/classTest2.js"></script>
+   <script type="text/javascript" src="js/functions.js"></script>
+   <script type="text/javascript" src="js/requestNextAnimationFrame.js"></script>
+   <script type="text/javascript" src="js/sprites.js"></script>
+</body>
+</html>
